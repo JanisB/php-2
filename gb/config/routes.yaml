@@ -1,0 +1,27 @@
+#index:
+#    path: /
+#    controller: App\Controller\QuestionController::homepage
+
+index:
+    path: /catalog
+    controller: App\Controller\ProductCatalogController::index
+
+category_index:
+    path: /category
+    controller: App\Controller\CategoryController::index
+
+category_id:
+    path: /category/{id}
+    controller: App\Controller\CategoryController::getCategory
+
+catalog_id:
+    path: /catalog/{id}
+    controller: App\Controller\ProductCatalogController::getCatalog
+
+admin:
+    path: /admin
+    controller: App\Controller\AdminController::index
+
+#order_update_status:
+#    path: /orders/{id}/status/{status_id}
+#   method: POST
